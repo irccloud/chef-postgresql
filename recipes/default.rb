@@ -17,3 +17,5 @@ when "debian"
   include_recipe "postgresql::debian_backports"
   include_recipe "postgresql::apt_repository"
 end
+
+include_recipe "postgresql::ruby"
