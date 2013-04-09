@@ -31,9 +31,7 @@ rescue LoadError
   include_recipe "postgresql::client"
 
   node['postgresql']['client_packages'].each do |pg_pack|
-
-    resources("package[#{pg_pack}]").run_action(:install)
-
+      package pg_pack
   end
 
   begin
