@@ -9,6 +9,7 @@
 
 default["postgresql"]["version"]                         = "9.2"
 
+
 default["postgresql"]["environment_variables"]           = {}
 default["postgresql"]["pg_ctl_options"]                  = ""
 default["postgresql"]["pg_hba"]                          = []
@@ -363,3 +364,4 @@ default["postgresql"]["databases"]                       = []
 #------------------------------------------------------------------------------
 
 default["postgresql"]["custom_variable_classes"]         = ""
+default["postgresql"]["client_packages"] = ["postgresql-client-9.2", "libpq-dev"]
